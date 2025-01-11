@@ -6,6 +6,9 @@ module.exports = {
       fontFamily:{
         dela: "Dela Gothic One, serif" ,
         syne: "Syne, serif"
+      },
+      colors: {
+        item: "#F0EEED",
       }
     },
   },

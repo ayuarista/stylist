@@ -6,17 +6,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Stylist</title>
     <link rel="stylesheet" href="../dist/output.css" />
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/alpinejs@3.14.8/dist/cdn.min.js"
+    ></script>
   </head>
   <body>
     <!-- HEADER -->
     <header class="fixed z-50 w-full">
-      <div class="bg-black flex justify-between items-center p-3">
-        <p class="text-white text-xs mx-auto">
-          Sign up and get 20% off to your first order.
-          <span class="underline">Sign Up Now</span>
-        </p>
-        <ion-icon name="close-outline" class="text-white"></ion-icon>
-      </div>
+        <div x-data="{ show: true }" x-show="show" class="bg-black flex justify-between items-center p-3">
+            <p class="text-white text-xs mx-auto">
+              Sign up and get 20% off to your first order.
+              <span class="underline">Sign Up Now</span>
+            </p>
+            <ion-icon 
+              name="close-outline" 
+              class="text-white cursor-pointer text-xl" 
+              @click="show = false">
+            </ion-icon>
+          </div>          
       <div class="flex items-center justify-between p-5 bg-white w-full">
         <div class="mx-5">
           <h1 class="font-dela text-xl">STYLIST</h1>
@@ -93,6 +101,37 @@
         </div>
     </div>
     </section>
+
+    <!-- Home -->
+    <section class="mt-16 mx-10">
+        <div class="flex items-center justify-between">
+            <h1 class="text-3xl font-semibold">New Arrivals</h1>
+            <div class="flex items-center gap-1 border border-black px-8 py-2 rounded-full">
+                <a href="" class="text-sm">View More</a>
+                <ion-icon name="arrow-forward-outline"></ion-icon>
+            </div>
+        </div>
+        <div class="mt-10">
+            <div>
+                <div class=" bg-item w-52 h-52 overflow-hidden rounded-xl">
+                    <img src="./assets/hero/hero2.png" alt="" class="bg-cover">
+                </div>
+                <div>
+                    <h1 class="capitalize font-semibold text-base mt-3">T-shirt with Tape Details</h1>
+                    <div class="flex items-center gap-1 mt-1">
+                        <ion-icon name="star" class="text-yellow-400"></ion-icon>
+                        <ion-icon name="star" class="text-yellow-400"></ion-icon>
+                        <ion-icon name="star" class="text-yellow-400"></ion-icon>
+                        <ion-icon name="star" class="text-yellow-400"></ion-icon>
+                        <ion-icon name="star-half" class="text-yellow-400"></ion-icon>
+                        <p>4.5/<span class="text-gray-400">5</span></p>
+                    </div>
+                    <h1 class="font-bold text-lg mt-1">Rp. 1.249.000</h1>
+                </div>
+            </div>
+        </div>
+    </section>
+
 
     <script
       type="module"
