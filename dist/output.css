@@ -643,6 +643,10 @@ video {
   height: 15rem;
 }
 
+.h-96{
+  height: 24rem;
+}
+
 .h-\[110px\]{
   height: 110px;
 }
@@ -709,6 +713,10 @@ video {
 
 .gap-10{
   gap: 2.5rem;
+}
+
+.gap-2{
+  gap: 0.5rem;
 }
 
 .gap-3{
