@@ -14,17 +14,22 @@
   <body>
     <!-- HEADER -->
     <header class="fixed z-50 w-full">
-        <div x-data="{ show: true }" x-show="show" class="bg-black flex justify-between items-center p-3">
-            <p class="text-white text-xs mx-auto">
-              Sign up and get 20% off to your first order.
-              <span class="underline">Sign Up Now</span>
-            </p>
-            <ion-icon 
-              name="close-outline" 
-              class="text-white cursor-pointer text-xl" 
-              @click="show = false">
-            </ion-icon>
-          </div>          
+      <div
+        x-data="{ show: true }"
+        x-show="show"
+        class="bg-black flex justify-between items-center p-3"
+      >
+        <p class="text-white text-xs mx-auto">
+          Sign up and get 20% off to your first order.
+          <span class="underline">Sign Up Now</span>
+        </p>
+        <ion-icon
+          name="close-outline"
+          class="text-white cursor-pointer text-xl"
+          @click="show = false"
+        >
+        </ion-icon>
+      </div>
       <div class="flex items-center justify-between p-5 bg-white w-full">
         <div class="mx-5">
           <h1 class="font-dela text-xl">STYLIST</h1>
@@ -90,46 +95,52 @@
             </div>
           </div>
         </div>
-    </div>
-    <div class="w-full bg-black absolute -bottom-20 h-[110px]">
+      </div>
+      <div class="w-full bg-black absolute -bottom-20 h-[110px]">
         <div class="flex items-center justify-between mx-10 p-3 gap-3 mt-4">
-            <img src="./assets/logo brand/versace.svg" alt="" class="w-36">
-            <img src="./assets/logo brand/zara.svg" alt="" class="w-28">
-            <img src="./assets/logo brand/gucci.svg" alt="" class="w-36">
-            <img src="./assets/logo brand/prada.svg" alt="" class="w-36">
-            <img src="./assets/logo brand/calvin klein.svg" alt="" class="w-40">
+          <img src="./assets/logo brand/versace.svg" alt="" class="w-36" />
+          <img src="./assets/logo brand/zara.svg" alt="" class="w-28" />
+          <img src="./assets/logo brand/gucci.svg" alt="" class="w-36" />
+          <img src="./assets/logo brand/prada.svg" alt="" class="w-36" />
+          <img src="./assets/logo brand/calvin klein.svg" alt="" class="w-40" />
         </div>
-    </div>
+      </div>
     </section>
 
     <!-- Home -->
     <section class="mt-16 mx-10">
-        <div class="flex items-center justify-between">
-            <h1 class="text-3xl font-semibold">New Arrivals</h1>
-            <div class="flex items-center gap-1 border border-black px-8 py-2 rounded-full">
-                <a href="" class="text-sm">View More</a>
-                <ion-icon name="arrow-forward-outline"></ion-icon>
-            </div>
+      <div class="flex items-center justify-between">
+        <h1 class="text-3xl font-semibold">New Arrivals</h1>
+        <div
+          class="flex items-center gap-1 border border-black px-8 py-2 rounded-full"
+        >
+          <a href="" class="text-sm">View More</a>
+          <ion-icon name="arrow-forward-outline"></ion-icon>
         </div>
-        <div class="mt-10">
-            <div>
-                <div class=" bg-item w-52 h-52 overflow-hidden rounded-xl">
-                    <img src="./assets/hero/hero2.png" alt="" class="bg-cover">
+      </div>
+      <div class="mt-10">
+        <div x-data="productData()">
+          <div class="grid grid-cols-4 place-items-center gap-3">
+            <template x-for="product in products" :key="product.id">
+              <div>
+                <div class="bg-item w-52 h-52 overflow-hidden rounded-lg">
+                  <img :src="product.image" alt="" class="w-full bg-cover">
                 </div>
                 <div>
-                    <h1 class="capitalize font-semibold text-base mt-3">T-shirt with Tape Details</h1>
-                    <div class="flex items-center gap-1 mt-1">
-                        <ion-icon name="star" class="text-yellow-400"></ion-icon>
-                        <ion-icon name="star" class="text-yellow-400"></ion-icon>
-                        <ion-icon name="star" class="text-yellow-400"></ion-icon>
-                        <ion-icon name="star" class="text-yellow-400"></ion-icon>
-                        <ion-icon name="star-half" class="text-yellow-400"></ion-icon>
-                        <p>4.5/<span class="text-gray-400">5</span></p>
-                    </div>
-                    <h1 class="font-bold text-lg mt-1">Rp. 1.249.000</h1>
+                  <h1 class="font-semibold text-base mt-3" x-text="product.name"></h1>
+                <div class="flex items-center gap-1 mt-1">
+                  <template x-for="star in Math.floor(product.rating)">
+                    <ion-icon name="star" class="text-yellow-400"></ion-icon>
+                  </template>
+                  <p x-text="product.rating + '/5'" class="text-sm"></p>
                 </div>
-            </div>
+                  <h1 x-text="product.price" class="font-bold text-lg mt-2"></h1>
+              </div>
+              </div>
+            </template>
+          </div>
         </div>
+      </div>
     </section>
 
 
@@ -141,5 +152,6 @@
       nomodule
       src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
     ></script>
+    <script src="./script.js"></script>
   </body>
 </html>
