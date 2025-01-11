@@ -572,6 +572,10 @@ video {
   bottom: -5rem;
 }
 
+.bottom-0{
+  bottom: 0px;
+}
+
 .bottom-32{
   bottom: 8rem;
 }
@@ -580,8 +584,20 @@ video {
   bottom: 20rem;
 }
 
+.left-0{
+  left: 0px;
+}
+
 .right-10{
   right: 2.5rem;
+}
+
+.top-0{
+  top: 0px;
+}
+
+.top-4{
+  top: 1rem;
 }
 
 .z-50{
@@ -631,6 +647,10 @@ video {
   margin-top: 1rem;
 }
 
+.mt-8{
+  margin-top: 2rem;
+}
+
 .flex{
   display: flex;
 }
@@ -643,12 +663,20 @@ video {
   height: 15rem;
 }
 
-.h-96{
-  height: 24rem;
-}
-
 .h-\[110px\]{
   height: 110px;
+}
+
+.h-\[25rem\]{
+  height: 25rem;
+}
+
+.h-full{
+  height: 100%;
+}
+
+.h-screen{
+  height: 100vh;
 }
 
 .w-28{
@@ -665,6 +693,10 @@ video {
 
 .w-64{
   width: 16rem;
+}
+
+.w-72{
+  width: 18rem;
 }
 
 .w-\[40\%\]{
@@ -701,6 +733,10 @@ video {
 
 .items-center{
   align-items: center;
+}
+
+.justify-center{
+  justify-content: center;
 }
 
 .justify-between{
@@ -785,6 +821,10 @@ video {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity, 1));
 }
 
+.bg-opacity-50{
+  --tw-bg-opacity: 0.5;
+}
+
 .bg-cover{
   background-size: cover;
 }
@@ -795,6 +835,10 @@ video {
 
 .p-3{
   padding: 0.75rem;
+}
+
+.p-4{
+  padding: 1rem;
 }
 
 .p-5{
@@ -822,6 +866,10 @@ video {
 
 .font-dela{
   font-family: Dela Gothic One, serif;
+}
+
+.font-syne{
+  font-family: Syne, serif;
 }
 
 .text-3xl{
@@ -858,6 +906,11 @@ video {
   line-height: 1rem;
 }
 
+.text-2xl{
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
 .font-bold{
   font-weight: 700;
 }
@@ -890,12 +943,67 @@ video {
   color: rgb(250 204 21 / var(--tw-text-opacity, 1));
 }
 
+.text-black{
+  --tw-text-opacity: 1;
+  color: rgb(0 0 0 / var(--tw-text-opacity, 1));
+}
+
+.text-blue-500{
+  --tw-text-opacity: 1;
+  color: rgb(59 130 246 / var(--tw-text-opacity, 1));
+}
+
+.text-blue-400{
+  --tw-text-opacity: 1;
+  color: rgb(96 165 250 / var(--tw-text-opacity, 1));
+}
+
 .underline{
   text-decoration-line: underline;
 }
 
+.opacity-0{
+  opacity: 0;
+}
+
+.opacity-100{
+  opacity: 1;
+}
+
+.transition-all{
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+.transition-opacity{
+  transition-property: opacity;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+.duration-300{
+  transition-duration: 300ms;
+}
+
+.duration-500{
+  transition-duration: 500ms;
+}
+
+.ease-in{
+  transition-timing-function: cubic-bezier(0.4, 0, 1, 1);
+}
+
+.ease-out{
+  transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
+}
+
 html{
   font-family: 'Poppins', sans-serif;
+}
+
+.hover\:w-80:hover{
+  width: 20rem;
 }
 
 .hover\:underline:hover{
