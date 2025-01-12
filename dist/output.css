@@ -689,6 +689,22 @@ video {
   height: 96px;
 }
 
+.h-\[35rem\]{
+  height: 35rem;
+}
+
+.h-\[33\.5rem\]{
+  height: 33.5rem;
+}
+
+.h-\[33\.4rem\]{
+  height: 33.4rem;
+}
+
+.h-\[33\.2rem\]{
+  height: 33.2rem;
+}
+
 .w-16{
   width: 4rem;
 }
