@@ -98,7 +98,7 @@
       </div>
     </section>
     <!-- Best Seller -->
-    <section class="mt-16 mx-10 scroll-mt-40" id="bestSeller">
+    <section class="mt-16 mx-10" id="bestSeller">
       <div class="flex items-center justify-between">
         <h1 class="text-3xl font-semibold border-b border-black">Best Seller</h1>
         <div
@@ -170,12 +170,12 @@
     </section>
 
     <!-- Preview Product Slider -->
-    <section x-data="productPreview()">
+    <section x-data="productPreview()" class="mt-12">
       <div>
         <div class="flex items-center justify-between gap-2 mt-8 mr-12">
-          <h1 class="font-dela text-3xl">HAVE A HARD YEAR</h1>
+          <h1 class="font-dela text-3xl mx-10">HAVE A HARD YEAR</h1>
           <div>
-            <button  @click="prevSlide">
+            <button  @click="prevSlide" class="px-1 py-1 border border-black rounded-full">
               <ion-icon name="arrow-back-outline" class="text-xl cursor-pointer"></ion-icon>
             </button>
             <button  @click="nextSlide">
@@ -190,7 +190,7 @@
         >
           <div class="flex items-center justify-center gap-2 mt-8">
             <template x-for="product in products" :key="product.id">
-              <div class="h-[25rem] w-72 hover:w-[19rem] transition-all duration-500 overflow-hidden relative">
+              <div class="h-[25rem] w-72 hover:w-[19.5rem] transition-all duration-500 overflow-hidden relative grayscale hover:grayscale-0">
                 <img :src="product.image" alt="" class="w-full bg-cover" >
               </div>
             </template>
