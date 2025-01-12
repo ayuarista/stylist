@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Stylist</title>
     <link rel="stylesheet" href="../dist/output.css" />
+    <link rel="icon" href="../src/assets/logo/stylist-logo.svg">
     <script
       defer
       src="https://cdn.jsdelivr.net/npm/alpinejs@3.14.8/dist/cdn.min.js"
@@ -37,7 +38,7 @@
         </div>
         <nav>
           <ul class="flex items-center gap-5 text-sm font-medium mx-8">
-            <li class="hover:underline"><a href="#">Home</a></li>
+            <li class="hover:underline"><a href="#hero">Home</a></li>
             <li class="hover:underline"><a href="#bestSeller">Shop</a></li>
             <li class="hover:underline"><a href="#review">Reviews</a></li>
           </ul>
@@ -46,7 +47,7 @@
     </header>
 
     <!-- HERO -->
-    <section class="bg-[#F2F0F1] pt-[100px]">
+    <section class="bg-[#F2F0F1] pt-[100px]" id="hero">
       <div class="flex items-start mx-10 gap-5">
         <div class="w-[60%] flex justify-between gap-6 flex-col">
           <div class="mt-10 flex flex-col gap-5">
@@ -102,7 +103,7 @@
     </section>
 
     <!-- Best Seller -->
-    <section class="mt-16 mx-10" id="bestSeller">
+    <section class="mt-16 mx-10 scroll-mt-40" id="bestSeller">
       <div class="flex items-center justify-between">
         <h1 class="text-3xl font-semibold border-b border-black">
           Best Seller
