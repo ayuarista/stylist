@@ -568,12 +568,8 @@ video {
   position: relative;
 }
 
-.-bottom-20{
-  bottom: -5rem;
-}
-
-.bottom-0{
-  bottom: 0px;
+.-bottom-0{
+  bottom: -0px;
 }
 
 .bottom-32{
@@ -584,40 +580,8 @@ video {
   bottom: 20rem;
 }
 
-.left-0{
-  left: 0px;
-}
-
 .right-10{
   right: 2.5rem;
-}
-
-.top-0{
-  top: 0px;
-}
-
-.top-4{
-  top: 1rem;
-}
-
-.-bottom-12{
-  bottom: -3rem;
-}
-
-.-bottom-10{
-  bottom: -2.5rem;
-}
-
-.-bottom-5{
-  bottom: -1.25rem;
-}
-
-.-bottom-1{
-  bottom: -0.25rem;
-}
-
-.-bottom-0{
-  bottom: -0px;
 }
 
 .z-50{
@@ -639,16 +603,17 @@ video {
   margin-right: auto;
 }
 
+.mx-8{
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+
 .mt-1{
   margin-top: 0.25rem;
 }
 
 .mt-10{
   margin-top: 2.5rem;
-}
-
-.mt-14{
-  margin-top: 3.5rem;
 }
 
 .mt-16{
@@ -683,77 +648,36 @@ video {
   height: 15rem;
 }
 
-.h-\[110px\]{
-  height: 110px;
-}
-
 .h-\[25rem\]{
   height: 25rem;
-}
-
-.h-full{
-  height: 100%;
-}
-
-.h-screen{
-  height: 100vh;
-}
-
-.h-\[11px\]{
-  height: 11px;
-}
-
-.h-\[96px\]{
-  height: 96px;
-}
-
-.h-min{
-  height: -moz-min-content;
-  height: min-content;
-}
-
-.h-80{
-  height: 20rem;
-}
-
-.h-96{
-  height: 24rem;
-}
-
-.h-9{
-  height: 2.25rem;
-}
-
-.h-\[200px\]{
-  height: 200px;
-}
-
-.h-\[\]{
-  height: ;
-}
-
-.h-\[30rem\]{
-  height: 30rem;
-}
-
-.h-\[35rem\]{
-  height: 35rem;
 }
 
 .h-\[33rem\]{
   height: 33rem;
 }
 
-.w-28{
-  width: 7rem;
+.h-\[96px\]{
+  height: 96px;
+}
+
+.h-\[35rem\]{
+  height: 35rem;
+}
+
+.w-20{
+  width: 5rem;
+}
+
+.w-24{
+  width: 6rem;
+}
+
+.w-32{
+  width: 8rem;
 }
 
 .w-36{
   width: 9rem;
-}
-
-.w-40{
-  width: 10rem;
 }
 
 .w-64{
@@ -776,16 +700,16 @@ video {
   width: 100%;
 }
 
-.w-32{
-  width: 8rem;
-}
-
-.w-24{
-  width: 6rem;
+.w-16{
+  width: 4rem;
 }
 
 .cursor-pointer{
   cursor: pointer;
+}
+
+.scroll-mt-40{
+  scroll-margin-top: 10rem;
 }
 
 .grid-cols-4{
@@ -820,10 +744,6 @@ video {
   gap: 0.25rem;
 }
 
-.gap-10{
-  gap: 2.5rem;
-}
-
 .gap-2{
   gap: 0.5rem;
 }
@@ -836,12 +756,12 @@ video {
   gap: 1.25rem;
 }
 
-.gap-7{
-  gap: 1.75rem;
-}
-
 .gap-6{
   gap: 1.5rem;
+}
+
+.gap-7{
+  gap: 1.75rem;
 }
 
 .overflow-hidden{
@@ -898,10 +818,6 @@ video {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity, 1));
 }
 
-.bg-opacity-50{
-  --tw-bg-opacity: 0.5;
-}
-
 .bg-cover{
   background-size: cover;
 }
@@ -914,12 +830,16 @@ video {
   padding: 0.75rem;
 }
 
-.p-4{
-  padding: 1rem;
-}
-
 .p-5{
   padding: 1.25rem;
+}
+
+.p-1{
+  padding: 0.25rem;
+}
+
+.p-4{
+  padding: 1rem;
 }
 
 .px-7{
@@ -945,13 +865,13 @@ video {
   font-family: Dela Gothic One, serif;
 }
 
-.font-syne{
-  font-family: Syne, serif;
-}
-
 .text-3xl{
   font-size: 1.875rem;
   line-height: 2.25rem;
+}
+
+.text-\[15px\]{
+  font-size: 15px;
 }
 
 .text-\[43px\]{
@@ -983,11 +903,6 @@ video {
   line-height: 1rem;
 }
 
-.text-2xl{
-  font-size: 1.5rem;
-  line-height: 2rem;
-}
-
 .font-bold{
   font-weight: 700;
 }
@@ -998,11 +913,6 @@ video {
 
 .font-semibold{
   font-weight: 600;
-}
-
-.text-gray-300{
-  --tw-text-opacity: 1;
-  color: rgb(209 213 219 / var(--tw-text-opacity, 1));
 }
 
 .text-gray-400{
@@ -1020,31 +930,8 @@ video {
   color: rgb(250 204 21 / var(--tw-text-opacity, 1));
 }
 
-.text-black{
-  --tw-text-opacity: 1;
-  color: rgb(0 0 0 / var(--tw-text-opacity, 1));
-}
-
-.text-blue-500{
-  --tw-text-opacity: 1;
-  color: rgb(59 130 246 / var(--tw-text-opacity, 1));
-}
-
-.text-blue-400{
-  --tw-text-opacity: 1;
-  color: rgb(96 165 250 / var(--tw-text-opacity, 1));
-}
-
 .underline{
   text-decoration-line: underline;
-}
-
-.opacity-0{
-  opacity: 0;
-}
-
-.opacity-100{
-  opacity: 1;
 }
 
 .transition-all{
@@ -1053,30 +940,13 @@ video {
   transition-duration: 150ms;
 }
 
-.transition-opacity{
-  transition-property: opacity;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 150ms;
-}
-
-.duration-300{
-  transition-duration: 300ms;
-}
-
 .duration-500{
   transition-duration: 500ms;
 }
 
-.ease-in{
-  transition-timing-function: cubic-bezier(0.4, 0, 1, 1);
-}
-
-.ease-out{
-  transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
-}
-
 html{
   font-family: 'Poppins', sans-serif;
+  scroll-behavior: smooth;
 }
 
 .hover\:w-80:hover{

@@ -61,37 +61,82 @@ function productNewArrival() {
   };
 }
 
-function productBestSeller(){
-    return{
-        products: [
-            {
-                id: 1,
-                image: "./assets/best seller/best1.png",
-                name: "Vertical Striped Shirt",
-                rating: 4.9,
-                price: "Rp. 849.000",
-            },
-            {
-                id: 2,
-                image: "./assets/best seller/best2.png",
-                name: "Club Fleece",
-                rating: 4.5,
-                price: "Rp. 450.000",
-            },
-            {
-                id: 3,
-                image: "./assets/best seller/best3.png",
-                name: "Loose Fit Bermuda Shorts",
-                rating: 5,
-                price: "Rp. 549.000",
-            },
-            {
-                id: 4,
-                image: "./assets/hero/hero2.png",
-                name: "Older Kids",
-                rating: 4,
-                price: "Rp. 649.000",
-            }
-        ]
-    }
+function productBestSeller() {
+  return {
+    products: [
+      {
+        id: 1,
+        image: "./assets/best seller/best1.png",
+        name: "Vertical Striped Shirt",
+        rating: 4.9,
+        price: "Rp. 849.000",
+      },
+      {
+        id: 2,
+        image: "./assets/best seller/best2.png",
+        name: "Club Fleece",
+        rating: 4.5,
+        price: "Rp. 450.000",
+      },
+      {
+        id: 3,
+        image: "./assets/best seller/best3.png",
+        name: "Loose Fit Bermuda Shorts",
+        rating: 5,
+        price: "Rp. 549.000",
+      },
+      {
+        id: 4,
+        image: "./assets/hero/hero2.png",
+        name: "Older Kids",
+        rating: 4,
+        price: "Rp. 649.000",
+      },
+    ],
+  };
+}
+
+function stylistAdvantages() {
+  return {
+    advantages: [
+      {
+        id: 1,
+        number: "200+",
+        title: "International Brands",
+      },
+      {
+        id: 2,
+        number: "3.000+",
+        title: "High-Quality Products",
+      },
+      {
+        id: 3,
+        number: "13.000+",
+        title: "Happy Customers",
+      },
+    ],
+  };
+}
+
+function productPreview() {
+  return {
+    products: [
+      {
+        id: 1,
+        image: "./assets/hero/hero.png",
+      },
+      {
+        id: 2,
+        image: "./assets/hero/hero3.jpg",
+      },
+      {
+        id: 3,
+        image: "./assets/hero/hero2.jpg",
+      },
+      {
+        id: 4,
+        image: "./assets/hero/hero4.jpg",
+      },
+    ],
+  };
 }
