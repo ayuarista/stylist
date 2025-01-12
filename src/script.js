@@ -162,8 +162,8 @@ function customersReviews(){
       {
         id: 2,
         name: "Jane Smith",
-        review: "I'm very satisfied with this product. The colors are beautiful and the quality is great. Thank you!",
-        rating: 4.8,
+        review: "The range of options they offer is truly remarkable, catering to a variety of tastes and occasions.",
+        rating: 4,
       },
       {
         id: 3,
