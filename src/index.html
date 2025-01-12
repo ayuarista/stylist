@@ -200,6 +200,21 @@
       </div>
     </section>
 
+    <!-- Customer Review -->
+    <section class="mt-12" x-data="customersReviews()">
+      <template x-for="review in reviews" :key="review.id">
+        <div class="flex items-center gap-3">
+          <div class="border border-gray-300 rounded-md p-2">
+            <template x-for="star in Math.floor(review.rating)">
+              <ion-icon name="star" class="text-yellow-400"></ion-icon>
+            </template>
+            <h1 x-text="review.name" class="font-semibold text-lg"></h1>
+            <p x-text="review.review" class="text-gray-400 text text-sm text-justify"></p>
+          </div>
+        </div>
+      </template>
+    </section>
+
     <script
       type="module"
       src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"

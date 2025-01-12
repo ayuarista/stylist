@@ -150,3 +150,28 @@ function productPreview() {
   };
 }
 
+function customersReviews(){
+  return{
+    reviews: [
+      {
+        id: 1,
+        name: "John Doe",
+        review: "This product is amazing! I love the way it looks and the quality of the materials. Thank you so much for making it.",
+        rating: 5,
+      },
+      {
+        id: 2,
+        name: "Jane Smith",
+        review: "I'm very satisfied with this product. The colors are beautiful and the quality is great. Thank you!",
+        rating: 4.8,
+      },
+      {
+        id: 3,
+        name: "Michael Johnson",
+        review: "This is the best product I've ever purchased. The colors are perfect and the quality is exceptional. Thank you so much!",
+        rating: 4.9,
+      },
+    ],
+  }
+}
+
