@@ -170,20 +170,33 @@
     </section>
 
     <!-- Preview Product Slider -->
-    <section>
-      <div class="flex items-center justify-center gap-2 mt-8">
-        <div class="h-[25rem] w-72 hover:w-80 transition-all duration-500 overflow-hidden relative">
-          <img src="./assets/hero/hero.png" alt="" class="w-full bg-cover" >
+    <section x-data="productPreview()">
+      <div>
+        <div class="flex items-center justify-between gap-2 mt-8 mr-12">
+          <h1 class="font-dela text-3xl">HAVE A HARD YEAR</h1>
+          <div>
+            <button  @click="prevSlide">
+              <ion-icon name="arrow-back-outline" class="text-xl cursor-pointer"></ion-icon>
+            </button>
+            <button  @click="nextSlide">
+              <ion-icon name="arrow-forward-outline" class="text-xl cursor-pointer"></ion-icon>
+            </button>
+          </div>
         </div>
-        <div class="h-[25rem] w-72 overflow-hidden">
-          <img src="./assets/hero/hero3.jpg" alt="" class="w-full bg-cover">
+        <div class="overflow-hidden">
+          <div 
+          class="flex transition-transform duration-500 ease-in-out"
+          :style="`transform: translateX(-${currentIndex * (112 / visibleSlides)}%)`"
+        >
+          <div class="flex items-center justify-center gap-2 mt-8">
+            <template x-for="product in products" :key="product.id">
+              <div class="h-[25rem] w-72 hover:w-[19rem] transition-all duration-500 overflow-hidden relative">
+                <img :src="product.image" alt="" class="w-full bg-cover" >
+              </div>
+            </template>
+          </div>
         </div>
-        <div class="h-[25rem] w-72 overflow-hidden">
-          <img src="./assets/hero/hero2.png" alt="" class="w-full bg-cover">
-        </div>
-        <div class="h-[25rem] w-72 overflow-hidden">
-          <img src="./assets/hero/hero4.jpg" alt="" class="w-full bg-cover">
-        </div>
+      </div>
       </div>
     </section>
 

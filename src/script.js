@@ -121,22 +121,32 @@ function stylistAdvantages() {
 function productPreview() {
   return {
     products: [
-      {
-        id: 1,
-        image: "./assets/hero/hero.png",
-      },
-      {
-        id: 2,
-        image: "./assets/hero/hero3.jpg",
-      },
-      {
-        id: 3,
-        image: "./assets/hero/hero2.jpg",
-      },
-      {
-        id: 4,
-        image: "./assets/hero/hero4.jpg",
-      },
+      { id: 1, image: "./assets/hero/hero.png" },
+      { id: 2, image: "./assets/hero/hero3.jpg" },
+      { id: 3, image: "./assets/hero/hero2.png" },
+      { id: 4, image: "./assets/hero/hero4.jpg" },
+      { id: 5, image: "./assets/hero/hero12.png" },
+      { id: 6, image: "./assets/hero/hero6.png" },
+      { id: 7, image: "./assets/hero/hero13.jpg" },
+      { id: 8, image: "./assets/hero/hero8.jpg" },
+      { id: 9, image: "./assets/hero/hero9.jpg" },
+      { id: 10, image: "./assets/hero/hero10.png" },
+      { id: 11, image: "./assets/hero/hero11.png" },
+      { id: 12, image: "./assets/hero/hero13.jpg" },
+      
     ],
+    currentIndex: 0,
+    visibleSlides: 5, 
+    nextSlide() {
+      if (this.currentIndex < this.products.length - this.visibleSlides) {
+        this.currentIndex++;
+      }
+    },
+    prevSlide() {
+      if (this.currentIndex > 0) {
+        this.currentIndex--;
+      }
+    },
   };
 }
+
