@@ -729,10 +729,6 @@ video {
   cursor: pointer;
 }
 
-.scroll-mt-4{
-  scroll-margin-top: 1rem;
-}
-
 .scroll-mt-40{
   scroll-margin-top: 10rem;
 }
