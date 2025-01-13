@@ -584,6 +584,14 @@ video {
   right: 2.5rem;
 }
 
+.top-0{
+  top: 0px;
+}
+
+.top-10{
+  top: 2.5rem;
+}
+
 .z-50{
   z-index: 50;
 }
@@ -687,6 +695,10 @@ video {
 
 .h-\[85px\]{
   height: 85px;
+}
+
+.h-full{
+  height: 100%;
 }
 
 .w-16{
@@ -955,6 +967,11 @@ video {
 .text-xs{
   font-size: 0.75rem;
   line-height: 1rem;
+}
+
+.text-2xl{
+  font-size: 1.5rem;
+  line-height: 2rem;
 }
 
 .font-bold{

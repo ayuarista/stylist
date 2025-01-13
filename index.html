@@ -47,24 +47,11 @@
     </header>
 
     <!-- HEADER MD/SM -->
-    <header class="w-full z-50 fixed block md:block lg:hidden xl:hidden">
-      <nav>
-        <ul class="flex items-center gap-5 text-sm font-medium mx-8">
-          <li class="hover:underline"><a href="#hero">Home</a></li>
-          <li class="hover:underline"><a href="#bestSeller">Shop</a></li>
-          <li class="hover:underline"><a href="#review">Reviews</a></li>
-        </ul>
-        <ion-icon
-          name="menu-outline"
-          class="text-white cursor-pointer text-xl"
-          @click="show =!show"
-        >
-        </ion-icon>
-        <div
-          x-data="{ show: false }"
-          x-show="show"
-          class="bg-black flex justify-between items-center p-3"
-        >
+    <header class="w-full z-50 fixed block md:block lg:hidden xl:hidden bg-white">
+      <div 
+      x-data="{ show: true }"
+      x-show="show"
+      class="bg-black w-full p-3 flex items-center justify-between">
         <p class="text-white text-xs mx-auto">
           Sign up and get 20% off to your first order.
           <span class="underline">Sign Up Now</span>
@@ -75,8 +62,29 @@
           @click="show = false"
         >
         </ion-icon>
+      </div>
+      <div class="flex items-center mx-5">
+        <button>
+          <ion-icon
+            name="menu-outline"
+            class="text-black cursor-pointer text-3xl"
+            @click="show = true"
+          ></ion-icon>
+        </button>
+        <div class="absolute flex flex-col bg-white w-full h-full top-10">
+          <nav>
+            <ul class="flex flex-col items-center gap-5 text-sm font-medium mx-8">
+              <li class="hover:underline"><a href="#hero">Home</a></li>
+              <li class="hover:underline"><a href="#bestSeller">Shop</a></li>
+              <li class="hover:underline"><a href="#review">Reviews</a></li>
+            </ul>
+          </nav>
         </div>
-      </nav>
+        <div class="flex items-center">
+          <img src="./src/assets/logo/stylist-logo.svg" alt="" class="w-16" />
+          <h1 class="font-dela text-lg">STYLIST</h1>
+        </div>
+      </div>
     </header>
 
     <!-- HERO -->
