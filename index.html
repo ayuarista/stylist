@@ -64,14 +64,26 @@
         </ion-icon>
       </div>
       <div class="flex items-center mx-5">
-        <button>
+        <div class="flex items-center">
+        <button
+        @click="showMenu = !showMenu"
+        x-data="{ showMenu: true}">
+        
           <ion-icon
             name="menu-outline"
             class="text-black cursor-pointer text-3xl"
-            @click="show = true"
           ></ion-icon>
         </button>
-        <div class="absolute flex flex-col bg-white w-full h-full top-10">
+          <img src="./src/assets/logo/stylist-logo.svg" alt="" class="w-16" />
+          <h1 class="font-dela text-lg">STYLIST</h1>
+        </div>
+        <div
+        x-data="{ showMenu: false}"
+        x-show="showMenu"
+        class="absolute top-32
+         left-0 w-full bg-white z-50"
+        @click.away="showMenu = false"
+        x-transition>
           <nav>
             <ul class="flex flex-col items-center gap-5 text-sm font-medium mx-8">
               <li class="hover:underline"><a href="#hero">Home</a></li>
@@ -79,10 +91,6 @@
               <li class="hover:underline"><a href="#review">Reviews</a></li>
             </ul>
           </nav>
-        </div>
-        <div class="flex items-center">
-          <img src="./src/assets/logo/stylist-logo.svg" alt="" class="w-16" />
-          <h1 class="font-dela text-lg">STYLIST</h1>
         </div>
       </div>
     </header>
@@ -149,7 +157,7 @@
       </div>
       <div class="mt-10">
         <div x-data="productBestSeller()">
-          <div class="grid grid-cols-4 place-items-center">
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 place-items-center">
             <template x-for="product in products" :key="product.id">
               <div>
                 <div class="w-64 h-60 rounded-lg overflow-hidden">
