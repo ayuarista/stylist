@@ -101,7 +101,7 @@ function stylistAdvantages() {
     advantages: [
       {
         id: 1,
-        number: "200+",
+        number: "150+",
         title: "International Brands",
       },
       {
@@ -111,7 +111,7 @@ function stylistAdvantages() {
       },
       {
         id: 3,
-        number: "13.000+",
+        number: "15.000+",
         title: "Happy Customers",
       },
     ],
@@ -161,7 +161,7 @@ function customersReviews(){
       },
       {
         id: 2,
-        name: "Jane Smith",
+        name: "Ryan Smith",
         review: "The range of options they offer is truly remarkable, catering to a variety of tastes and occasions.",
         rating: 4,
       },
