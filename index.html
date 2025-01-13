@@ -46,54 +46,57 @@
       </div>
     </header>
 
-    <!-- HEADER MD/SM -->
-    <header class="w-full z-50 fixed block md:block lg:hidden xl:hidden bg-white">
-      <div 
-      x-data="{ show: true }"
-      x-show="show"
-      class="bg-black w-full p-3 flex items-center justify-between">
-        <p class="text-white text-xs mx-auto">
-          Sign up and get 20% off to your first order.
-          <span class="underline">Sign Up Now</span>
-        </p>
+<!-- HEADER MD/SM -->
+<header class="w-full z-50 fixed block md:block lg:hidden xl:hidden bg-white" x-data="{ showMenu: false, showAdvertisement: true }">
+  <!-- Banner -->
+  <div 
+    x-show="showAdvertisement"
+    class="bg-black w-full p-3 flex items-center justify-between">
+    <p class="text-white text-xs mx-auto">
+      Sign up and get 20% off to your first order.
+      <span class="underline cursor-pointer">Sign Up Now</span>
+    </p>
+    <ion-icon
+      name="close-outline"
+      class="text-white cursor-pointer text-xl"
+      @click="showAdvertisement = false"
+    ></ion-icon>
+  </div>
+
+  <div class="flex items-center justify-between mx-5 py-4">
+    <div class="flex items-center gap-3">
+      <button @click="showMenu = !showMenu">
         <ion-icon
-          name="close-outline"
-          class="text-white cursor-pointer text-xl"
-          @click="show = false"
-        >
-        </ion-icon>
-      </div>
-      <div class="flex items-center mx-5">
-        <div class="flex items-center">
-        <button
-        @click="showMenu = !showMenu"
-        x-data="{ showMenu: true}">
-        
-          <ion-icon
-            name="menu-outline"
-            class="text-black cursor-pointer text-3xl"
-          ></ion-icon>
-        </button>
-          <img src="./src/assets/logo/stylist-logo.svg" alt="" class="w-16" />
-          <h1 class="font-dela text-lg">STYLIST</h1>
-        </div>
-        <div
-        x-data="{ showMenu: false}"
-        x-show="showMenu"
-        class="absolute top-32
-         left-0 w-full bg-white z-50"
-        @click.away="showMenu = false"
-        x-transition>
-          <nav>
-            <ul class="flex flex-col items-center gap-5 text-sm font-medium mx-8">
-              <li class="hover:underline"><a href="#hero">Home</a></li>
-              <li class="hover:underline"><a href="#bestSeller">Shop</a></li>
-              <li class="hover:underline"><a href="#review">Reviews</a></li>
-            </ul>
-          </nav>
-        </div>
-      </div>
-    </header>
+          name="menu-outline"
+          class="text-black cursor-pointer text-3xl"
+        ></ion-icon>
+      </button>
+      <img src="./src/assets/logo/stylist-logo.svg" alt="" class="w-16" />
+      <h1 class="font-dela text-lg">STYLIST</h1>
+    </div>
+  </div>
+
+  <!-- Dropdown Menu -->
+  <div 
+    x-show="showMenu" 
+    class="absolute top-0 bottom-0 left-0 w-[60%] bg-white z-50"
+    @click.away="showMenu = false"
+    x-transition>
+    <div class="px-5 mt-8">
+      <button @click="showMenu = false">
+        <ion-icon name="close-outline" class="text-2xl"></ion-icon>
+      </button>
+    </div>
+    <nav>
+      <ul class="flex flex-col items-start gap-5 mx-10 text-sm font-medium py-5">
+        <li class="hover:underline"><a href="#hero">Home</a></li>
+        <li class="hover:underline"><a href="#bestSeller">Shop</a></li>
+        <li class="hover:underline"><a href="#review">Reviews</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
 
     <!-- HERO -->
     <section class="bg-[#F2F0F1] pt-[100px]" id="hero">
