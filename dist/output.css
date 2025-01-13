@@ -568,8 +568,8 @@ video {
   position: relative;
 }
 
-.-bottom-0{
-  bottom: -0px;
+.bottom-0{
+  bottom: 0px;
 }
 
 .bottom-32{
@@ -582,34 +582,6 @@ video {
 
 .right-10{
   right: 2.5rem;
-}
-
-.bottom-0{
-  bottom: 0px;
-}
-
-.-bottom-12{
-  bottom: -3rem;
-}
-
-.-bottom-14{
-  bottom: -3.5rem;
-}
-
-.-bottom-16{
-  bottom: -4rem;
-}
-
-.-bottom-1{
-  bottom: -0.25rem;
-}
-
-.top-0{
-  top: 0px;
-}
-
-.top-10{
-  top: 2.5rem;
 }
 
 .z-50{
@@ -661,6 +633,10 @@ video {
   margin-top: 3rem;
 }
 
+.mt-14{
+  margin-top: 3.5rem;
+}
+
 .mt-16{
   margin-top: 4rem;
 }
@@ -681,8 +657,8 @@ video {
   margin-top: 2rem;
 }
 
-.mt-14{
-  margin-top: 3.5rem;
+.block{
+  display: block;
 }
 
 .flex{
@@ -693,6 +669,10 @@ video {
   display: grid;
 }
 
+.hidden{
+  display: none;
+}
+
 .h-60{
   height: 15rem;
 }
@@ -701,72 +681,8 @@ video {
   height: 25rem;
 }
 
-.h-\[33\.2rem\]{
-  height: 33.2rem;
-}
-
-.h-\[96px\]{
-  height: 96px;
-}
-
-.h-\[33rem\]{
-  height: 33rem;
-}
-
-.h-\[35rem\]{
-  height: 35rem;
-}
-
-.h-full{
-  height: 100%;
-}
-
-.h-screen{
-  height: 100vh;
-}
-
-.h-\[3rem\]{
-  height: 3rem;
-}
-
-.h-\[34rem\]{
-  height: 34rem;
-}
-
 .h-\[30rem\]{
   height: 30rem;
-}
-
-.h-\[\]{
-  height: ;
-}
-
-.h-\[25\]{
-  height: 25;
-}
-
-.h-\[25\%\]{
-  height: 25%;
-}
-
-.h-\[28rem\]{
-  height: 28rem;
-}
-
-.h-\[rem\]{
-  height: rem;
-}
-
-.h-\[90px\]{
-  height: 90px;
-}
-
-.h-\[80px\]{
-  height: 80px;
-}
-
-.h-\[px\]{
-  height: px;
 }
 
 .h-\[85px\]{
@@ -855,10 +771,6 @@ video {
 
 .items-center{
   align-items: center;
-}
-
-.justify-end{
-  justify-content: flex-end;
 }
 
 .justify-center{
@@ -962,11 +874,6 @@ video {
 
 .bg-cover{
   background-size: cover;
-}
-
-.object-cover{
-  -o-object-fit: cover;
-     object-fit: cover;
 }
 
 .p-1{
@@ -1116,10 +1023,6 @@ video {
   transition-duration: 500ms;
 }
 
-.duration-700{
-  transition-duration: 700ms;
-}
-
 .ease-in-out{
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -1150,4 +1053,34 @@ html{
 .hover\:grayscale-0:hover{
   --tw-grayscale: grayscale(0);
   filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+}
+
+@media (min-width: 768px){
+  .md\:block{
+    display: block;
+  }
+
+  .md\:hidden{
+    display: none;
+  }
+}
+
+@media (min-width: 1024px){
+  .lg\:block{
+    display: block;
+  }
+
+  .lg\:hidden{
+    display: none;
+  }
+}
+
+@media (min-width: 1280px){
+  .xl\:block{
+    display: block;
+  }
+
+  .xl\:hidden{
+    display: none;
+  }
 }
